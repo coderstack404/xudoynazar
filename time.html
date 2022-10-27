@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        @font-face {
+            font-family: 'digital-7';
+            src: url('fonts/digital-7.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'digital-7';
+            src: url('fonts/digital-7.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .clock {
+            font-family: 'digital-7';
+            color: red;
+            font-size: 100px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body background="time.jpg">
+
+    <nav><h3>TIME
+      
+        <a class="a1" href="index.html">HOME</a>
+        <a class="a2" href="map.html">MAP</a>
+          
+    </h3></nav>
+
+     <center>
+    <div class="clock"></div>
+
+    
+    <script>
+    
+    let clock = document.querySelector ('.clock')
+
+    function time() {
+        let date = new Date();
+        let hours = date.getHours() < 10 ? '0' + date.getHours() : date.getHours();
+        let min = date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes();
+        let sec = date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds();
+
+        clock.innerHTML = `${hours}:${min}:${sec}`;
+    }
+
+    setInterval(time, 1000)
+    </script>
+
+    </center>
+
+    <img class="b" src="soat.jpg" alt="">
+    <img class="c"src="soat2.jpg" alt="">
+    <img class="a"src="soat3.jpg" alt="">
+    
+</body>
+</html>

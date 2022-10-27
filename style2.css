@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+}
+
+nav{
+    background-color: red;
+    background-image: linear-gradient(315deg, blue 0%, red 74%);
+    padding: 1rem;
+    color: white;
+  }
+
+  .a1{
+    background-color: red;
+    background-image: linear-gradient(315deg, blue 0%, red 74%);
+    padding: 1rem;
+    color: white;
+  }
+  
+  .a2{
+    background-color: red;
+    background-image: linear-gradient(315deg, blue 0%, red 74%);
+    padding: 1rem;
+    color: white;
+  }
+
+  .b{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+
+  }
+
+  .c{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-left: 175px;
+  }
+
+  .a{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-left: 200px;
+  }
